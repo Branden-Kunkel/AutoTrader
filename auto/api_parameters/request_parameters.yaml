@@ -1,0 +1,48 @@
+---
+
+################ STATIC/CONSTANT PARAMETERS #####################
+
+static_parameters: 
+  polygon.io_url: "https://api.polygon.io/"
+  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
+
+
+
+################ ASSETS PARAMETERS #####################
+
+ticker: 
+  - "O:SPY241220P00720000"
+
+date:
+  - "2023-11-26"
+
+
+
+################ MARKET DATA ENDPOINTS #####################
+
+daily_open_close: 
+  url: "https://api.polygon.io/v1/open-close/{optionsTicker}/{date}?"
+  parameters: 
+    adjusted: "true"
+
+
+
+################ REFERENCE DATA ENDPOINTS #####################  
+
+view_tickers: 
+  url: "https://api.polygon.io/v3/reference/tickers?"
+  parameters: 
+    ticker : null #string 
+    type : null #string
+    market : null #string
+    exchange : null #string
+    cusip : null #string
+    cik : null #string
+    date : null #string
+    search : null #string
+    active : "true" # string
+    order : "asc" #string
+    limit : "10" #string
+    sort : "ticker" #string
+
+

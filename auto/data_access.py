@@ -1,39 +1,47 @@
 # library to access API Data from 'polygon.io'
-
+import re
 import requests
 import json
 import exceptions.exceptions as AuthEx
-import parameters.data_access_params as params
 
-api_key = params.static_parameters["api_key"]
+base_regex_expression = "(?<=/)\{[a-zA-Z]*\}"
+options_ticker_exp = "(?<=/)\{(?:optionsTicker)\}"
+date_exp = "(?<=/)\{(?:date)\}"
 
 class ApiDataPort():
     """class serves as an engine to access API data"""
 
-    def generate_request_url(self, url=str, paramaters=dict):
+
+################ REFERENCE DATA ENDPOINTS #####################
+
+    def generate_request_url2(self, url, ticker, date, parameters=dict):
+        
+        date_regex = re.compile("(?<=/)\{(?:date)\}")
+        ticker_regex = re.compile("(?<=/)\{(?:optionsTicker)\}")
+
+        url_buffer = re.sub(ticker_regex, ticker, url)
+        url_buffer2 = re.sub(date_regex, date, url_buffer)
 
         parameters_list = []
         endpoint_string = ""
 
-        for key, value in paramaters.items():
-            if paramaters[key] == None:
+        for key, value in parameters.items():
+            if parameters[key] == None:
                 pass
             else:
                 parameters_list.append(key + "=" + value)
-
+            
         endpoint_string = "&".join(parameters_list)
 
-        request_url = url + endpoint_string
+        request_url = url_buffer2 + endpoint_string
 
-        print(parameters_list) 
-        print(endpoint_string)
-        print(request_url)
-
+        print(request_url)    
+        
         return request_url
 
-        
 
-    def request_data(self, url=str):
+
+    def request_data(self, url, api_key):
 
         headers = {"Authorization" : api_key}
         
@@ -47,11 +55,9 @@ class ApiDataPort():
                 print(response.content) 
 
         except AuthEx.RequestStatusCodeError as err:
-            print("Error: Response status code:{}".format(err))
+            print("Error: Response status code: {} > {}".format(err, response.reason))
 
         
-
-
 
 
 
