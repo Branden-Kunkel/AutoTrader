@@ -37,7 +37,7 @@ class ApiDataPort():
 
         request_url = url_buffer3 + endpoint_string
 
-        print(request_url)    
+        print("\n" + request_url + "\n")    
         
         return request_url
 
@@ -54,7 +54,9 @@ class ApiDataPort():
             if response.status_code != 200:
                 raise AuthEx.RequestStatusCodeError(response.status_code)
             else:
-                print(response.content) 
+                response_object = json.loads(response.content)
+                #print(response_object)    
+            return response_object
 
         except AuthEx.RequestStatusCodeError as err:
             print("Error: Response status code: {} > {}".format(err, response.reason))

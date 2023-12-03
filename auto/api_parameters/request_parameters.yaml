@@ -11,9 +11,9 @@ static_parameters:
 ################ ASSETS PARAMETERS #####################
 
 asset_parameters: 
-  options_ticker: "O:A231215C00055000"
+  options_ticker: "O:A231215C00090000"
   ticker: "AAPL"
-  date: "2023-12-01"
+  date: "2023-12-02"
 
 
 
@@ -25,14 +25,52 @@ daily_open_close:
     adjusted: "true"
 
 simple_moving_average: 
-  url: "https://api.polygon.io/v1/indicators/sma/{optionsTicker}"
+  url: "https://api.polygon.io/v1/indicators/sma/{optionsTicker}?"
   parameters: 
     timestamp: null
     timespan: "day"
     adjusted: "true"
     window: "50"
     series_type: null
-    expand_underlying: null
+    expand_underlying: "true"
+    order: "asc"
+    limit: "10"
+
+exponential_moving_average: 
+  url: "https://api.polygon.io/v1/indicators/ema/{optionsTicker}?"
+  parameters: 
+    timestamp: null
+    timespan: "day"
+    adjusted: "true"
+    window: "50"
+    series_type: "close"
+    expand_underlying: "true"
+    order: "asc"
+    limit: "10"
+
+macd: 
+  url: "https://api.polygon.io/v1/indicators/macd/{optionsTicker}?"
+  parameters:
+    timestamp: null
+    timespan: "day"
+    adjusted: "true"
+    short_window: "12"
+    long_window: "26"
+    signal_window: "9"
+    series_type: "close"
+    expand_underlying: "true"
+    order: "asc"
+    limit: "10"
+
+relative_strength_index: 
+  url: "https://api.polygon.io/v1/indicators/rsi/{optionsTicker}?"
+  parameters:
+    timestamp: null
+    timespan: "day"
+    adjusted: "true"
+    window: "50"
+    series_type: "close"
+    expand_underlying: "true"
     order: "asc"
     limit: "10"
 
