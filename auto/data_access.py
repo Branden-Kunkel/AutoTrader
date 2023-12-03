@@ -14,13 +14,15 @@ class ApiDataPort():
 
 ################ REFERENCE DATA ENDPOINTS #####################
 
-    def generate_request_url2(self, url, ticker, date, parameters=dict):
+    def generate_request_url2(self, url, options_ticker, ticker, date, parameters=dict):
         
         date_regex = re.compile("(?<=/)\{(?:date)\}")
-        ticker_regex = re.compile("(?<=/)\{(?:optionsTicker)\}")
+        options_ticker_regex = re.compile("(?<=/)\{(?:optionsTicker)\}")
+        ticker_regex = re.compile("(?<=/)\{(?:ticker)\}")
 
-        url_buffer = re.sub(ticker_regex, ticker, url)
-        url_buffer2 = re.sub(date_regex, date, url_buffer)
+        url_buffer = re.sub(date_regex, date, url)
+        url_buffer2 = re.sub(options_ticker_regex, options_ticker, url_buffer)
+        url_buffer3 = re.sub(ticker, ticker, url_buffer2)
 
         parameters_list = []
         endpoint_string = ""
@@ -33,7 +35,7 @@ class ApiDataPort():
             
         endpoint_string = "&".join(parameters_list)
 
-        request_url = url_buffer2 + endpoint_string
+        request_url = url_buffer3 + endpoint_string
 
         print(request_url)    
         

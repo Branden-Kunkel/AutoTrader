@@ -4,17 +4,16 @@
 
 static_parameters: 
   polygon.io_url: "https://api.polygon.io/"
-  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
+  api_key: "Bearer "
 
 
 
 ################ ASSETS PARAMETERS #####################
 
-ticker: 
-  - "O:SPY241220P00720000"
-
-date:
-  - "2023-11-26"
+asset_parameters: 
+  options_ticker: "O:A231215C00055000"
+  ticker: "AAPL"
+  date: "2023-12-01"
 
 
 
@@ -24,6 +23,18 @@ daily_open_close:
   url: "https://api.polygon.io/v1/open-close/{optionsTicker}/{date}?"
   parameters: 
     adjusted: "true"
+
+simple_moving_average: 
+  url: "https://api.polygon.io/v1/indicators/sma/{optionsTicker}"
+  parameters: 
+    timestamp: null
+    timespan: "day"
+    adjusted: "true"
+    window: "50"
+    series_type: null
+    expand_underlying: null
+    order: "asc"
+    limit: "10"
 
 
 
@@ -45,4 +56,18 @@ view_tickers:
     limit : "10" #string
     sort : "ticker" #string
 
+
+options_contracts: 
+  url: "https://api.polygon.io/v3/reference/options/contracts?" 
+  parameters:  
+    underlying_ticker: null
+    contract_type: null
+    expiration_date: null
+    as_of: null
+    strike_price: null
+    expired: "false"
+    order: null
+    limit: "10"
+    sort: null  
+  
 
