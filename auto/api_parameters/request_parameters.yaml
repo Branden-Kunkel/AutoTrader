@@ -4,7 +4,11 @@
 
 static_parameters: 
   polygon.io_url: "https://api.polygon.io/"
+<<<<<<< HEAD
   api_key: "Bearer "
+=======
+  api_key: ""
+>>>>>>> dc07f58a9abc791bbee7b9a036aaa383236b1caa
 
 
 
