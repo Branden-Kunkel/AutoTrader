@@ -8,3 +8,4 @@ class RequestStatusCodeError(Exception):
 
     def __str__(self) -> str:
         return(repr(self.status_code))
+    

@@ -16,7 +16,6 @@ asset_parameters:
   date: "2023-12-02"
 
 
-
 ################ MARKET DATA ENDPOINTS #####################
 
 daily_open_close: 
