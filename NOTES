@@ -1,0 +1,4 @@
+TODO:
+
+use os.path in python modules to set paths for configuration files for both rust and python
+create and initialize rust data types derived from api data supplied by python

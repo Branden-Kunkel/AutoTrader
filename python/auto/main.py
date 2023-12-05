@@ -1,6 +1,7 @@
 import endpoint_tests as test
 import pprint
 import cmd
+import os
 
 
 
@@ -63,6 +64,9 @@ class TestCmdInterface(cmd.Cmd):
     def do_tickers(self, arg):
         display_test(test.test_tickers())
         return
+    
+    def do_cwd(self, arg):
+        print(os.getcwd())
     
 
 cli = TestCmdInterface()

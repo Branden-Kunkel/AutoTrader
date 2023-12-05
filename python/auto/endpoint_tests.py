@@ -1,7 +1,7 @@
 import data_access
 import yaml
 
-api_tools = data_access.ApiDataPort()
+api_tools = data_access.GetApiData()
 
 
 def test_tickers():

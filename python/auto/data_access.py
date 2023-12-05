@@ -1,4 +1,4 @@
-# library to access API Data from 'polygon.io'
+# library to access API Data from 'polygon.io and then export that data
 import re
 import requests
 import json
@@ -8,11 +8,9 @@ base_regex_expression = "(?<=/)\{[a-zA-Z]*\}"
 options_ticker_exp = "(?<=/)\{(?:optionsTicker)\}"
 date_exp = "(?<=/)\{(?:date)\}"
 
-class ApiDataPort():
+class GetApiData():
     """class serves as an engine to access API data"""
 
-
-################ REFERENCE DATA ENDPOINTS #####################
 
     def generate_request_url2(self, url, options_ticker, ticker, date, parameters=dict):
         
@@ -60,14 +58,22 @@ class ApiDataPort():
                 raise AuthEx.RequestStatusCodeError(response.status_code)
             else:
                 response_object = json.loads(response.content)
-                #print(response_object)    
-            return response_object
+                data = response_object["results"]  
+  
+            return data
 
         except AuthEx.RequestStatusCodeError as err:
             print("Error: Response status code: {} > {}".format(err, response.reason))
 
         except TypeError as err:
             print("Error: Parameter Type: Make sure all parameters in \'request_parameters.yaml\' are of \'string\' type.\n")
+
+
+class ExportApiData():
+    """class serves as an engine to export api data"""
+
+    def data_mapping(raw_data_dictionary):
+        pass
 
         
 
