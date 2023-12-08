@@ -11,7 +11,7 @@ static_parameters:
 ################ ASSETS PARAMETERS #####################
 
 asset_parameters: 
-  options_ticker: "O:A231215C00090000"
+  options_ticker: "O:A231215C00080000"
   ticker: "AAPL"
   date: "2023-12-02"
 
@@ -32,7 +32,7 @@ simple_moving_average:
     window: "50"
     series_type: null
     expand_underlying: "true"
-    order: "asc"
+    order: "desc"
     limit: "10"
 
 exponential_moving_average: 
@@ -44,7 +44,7 @@ exponential_moving_average:
     window: "50"
     series_type: "close"
     expand_underlying: "true"
-    order: "asc"
+    order: "desc"
     limit: "10"
 
 macd: 
@@ -58,7 +58,7 @@ macd:
     signal_window: "9"
     series_type: "close"
     expand_underlying: "true"
-    order: "asc"
+    order: "desc"
     limit: "10"
 
 relative_strength_index: 
@@ -70,7 +70,7 @@ relative_strength_index:
     window: "50"
     series_type: "close"
     expand_underlying: "true"
-    order: "asc"
+    order: "desc"
     limit: "10"
 
 

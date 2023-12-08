@@ -3,14 +3,11 @@ import re
 import requests
 import json
 import exceptions.exceptions as AuthEx
+import pprint 
 
-base_regex_expression = "(?<=/)\{[a-zA-Z]*\}"
-options_ticker_exp = "(?<=/)\{(?:optionsTicker)\}"
-date_exp = "(?<=/)\{(?:date)\}"
 
 class GetApiData():
     """class serves as an engine to access API data"""
-
 
     def generate_request_url2(self, url, options_ticker, ticker, date, parameters=dict):
         
@@ -58,22 +55,71 @@ class GetApiData():
                 raise AuthEx.RequestStatusCodeError(response.status_code)
             else:
                 response_object = json.loads(response.content)
-                data = response_object["results"]  
-  
-            return data
+            return response_object
 
         except AuthEx.RequestStatusCodeError as err:
             print("Error: Response status code: {} > {}".format(err, response.reason))
+            return
 
         except TypeError as err:
             print("Error: Parameter Type: Make sure all parameters in \'request_parameters.yaml\' are of \'string\' type.\n")
+            return
+
 
 
 class ExportApiData():
     """class serves as an engine to export api data"""
 
-    def data_mapping(raw_data_dictionary):
-        pass
+    def sort_aggregates(self, data_object):
+
+        aggregates_dictionary_sorted =  {
+                                            "options_ticker": None,
+                                            "open_price" : None,
+                                            "close_price" : None,
+                                            "high_price" : None,
+                                            "low_price" : None,
+                                            "transactions" : None,
+                                            "otc_ticker" : None,
+                                            "unix_timestamp" : None,
+                                            "trading_volume" : None,
+                                            "weighted_avg_price" : None
+                                        }
+
+        try:
+            
+            # polygon.io API gives a list with a (single) dictionary for the 'aggregates' response object rather than just a nested dictionary? BELOW
+            aggregates_dict = data_object["results"]["underlying"]["aggregates"][0]
+
+            for key in aggregates_dict:
+                if key == 'T':
+                    aggregates_dictionary_sorted["options_ticker"] = aggregates_dict[key]
+                elif key == 'o':
+                    aggregates_dictionary_sorted["open_price"] = aggregates_dict[key]
+                elif key == 'c':
+                    aggregates_dictionary_sorted["close_price"] = aggregates_dict[key]
+                elif key == 'h':
+                    aggregates_dictionary_sorted["high_price"] = aggregates_dict[key]
+                elif key == 'l':
+                    aggregates_dictionary_sorted["low_price"] = aggregates_dict[key]
+                elif key == 'n':
+                    aggregates_dictionary_sorted["transactions"] = aggregates_dict[key]
+                elif key == 't':
+                    aggregates_dictionary_sorted["unix_timestamp"] = aggregates_dict[key]
+                elif key == 'v':
+                    aggregates_dictionary_sorted["trading_volume"] = aggregates_dict[key]    
+                elif key == 'vw':
+                    aggregates_dictionary_sorted["weighted_avg_price"] = aggregates_dict[key]
+                else:
+                    pass
+            print(aggregates_dict)
+            print("\n")
+            print(aggregates_dictionary_sorted)
+
+        except KeyError as key_error:
+            print("Error: Empty response object for {}".format(key_error.args))
+            return
+
+        
 
         
 

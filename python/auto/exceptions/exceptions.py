@@ -9,3 +9,12 @@ class RequestStatusCodeError(Exception):
     def __str__(self) -> str:
         return(repr(self.status_code))
     
+
+class NoResponseAggregates(Exception):
+    """handles no aggregate data from an API response"""
+    
+    def __init__(self, request_url):
+        self.request_url = request_url
+
+    def __str__(self) -> str:
+        return(repr(self.request_url))

@@ -1,21 +1,11 @@
-import endpoint_tests as test
+import function_tests as test
 import pprint
 import cmd
 import os
+import yaml
 
+file_paths = "file_paths.yaml"
 
-
-#test.test_options_contracts() ## works as intended
-
-#test.test_dailyopenclose() ##cant get to work? response 404 'not found'
-
-#test.test_sma() ## works as intended
-
-#test.test_ema() ##works as intended
-
-#test.test_macd() ##works as inteded
-
-#test.test_rsi() ## works as intended
 
 def display_test(object):
     pprint.pprint(object)
@@ -42,34 +32,32 @@ class TestCmdInterface(cmd.Cmd):
 
 
     def do_rsi(self, arg):
-        display_test(test.test_rsi())
+        test.test_endpoints(file_paths, "relative_strength_index")
         return
     
     def do_sma(self, arg):
-        display_test(test.test_sma())
+        display_test(test.test_endpoints(file_paths, "simple_moving_average"))
         return
     
     def do_ema(self, arg):
-        display_test(test.test_ema())
+        display_test(test.test_endpoints(file_paths, "exponential_moving_average"))
         return
 
     def do_macd(self, arg):
-        display_test(test.test_macd())
+        display_test(test.test_endpoints(file_paths, "macd"))
         return
     
     def do_options(self, arg):
-        display_test(test.test_options_contracts())
+        display_test(test.test_endpoints(file_paths,"options_contracts"))
         return
     
     def do_tickers(self, arg):
-        display_test(test.test_tickers())
+        display_test(test.test_endpoints(file_paths, "view_tickers"))
         return
     
     def do_cwd(self, arg):
         print(os.getcwd())
     
-
 cli = TestCmdInterface()
 cli.cmdloop()
-        
 
