@@ -32,11 +32,11 @@ class TestCmdInterface(cmd.Cmd):
 
 
     def do_rsi(self, arg):
-        test.test_endpoints(file_paths, "relative_strength_index")
+        test.test_data_export(test.test_endpoints(file_paths, "relative_strength_index"))
         return
     
     def do_sma(self, arg):
-        display_test(test.test_endpoints(file_paths, "simple_moving_average"))
+        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
         return
     
     def do_ema(self, arg):
@@ -48,7 +48,7 @@ class TestCmdInterface(cmd.Cmd):
         return
     
     def do_options(self, arg):
-        display_test(test.test_endpoints(file_paths,"options_contracts"))
+        print(display_test(test.test_endpoints(file_paths,"options_contracts")))
         return
     
     def do_tickers(self, arg):

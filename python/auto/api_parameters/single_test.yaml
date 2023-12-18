@@ -1,0 +1,108 @@
+---
+auto_timestamp: 2023-12-17 21:44:55.560341
+auto_url: https://api.polygon.io/v1/indicators/rsi/O:EVRI240119C00002500?timespan=day&adjusted=true&window=50&series_type=close&expand_underlying=true&order=desc&limit=10
+request_id: 5a3dddefaae88801bf9e2b5014964610
+results:
+  underlying:
+    aggregates:
+    - T: O:EVRI240119C00002500
+      c: 14.2
+      h: 14.2
+      l: 14.2
+      n: 1
+      o: 14.2
+      t: 1675141200000
+      v: 1
+      vw: 14.2
+    - T: O:EVRI240119C00002500
+      c: 14.8
+      h: 14.8
+      l: 14.8
+      n: 1
+      o: 14.8
+      t: 1675054800000
+      v: 1
+      vw: 14.8
+    url: https://api.polygon.io/v2/aggs/ticker/O:EVRI240119C00002500/range/1/day/1401681600000/1702878295495?limit=235&sort=desc
+status: OK
+---
+auto_timestamp: 2023-12-17 21:44:57.090022
+auto_url: https://api.polygon.io/v1/indicators/rsi/O:EVRI240119C00002500?timespan=day&adjusted=true&window=50&series_type=close&expand_underlying=true&order=desc&limit=10
+request_id: 04daec6d20b0d68076a0bb538003716e
+results:
+  underlying:
+    aggregates:
+    - T: O:EVRI240119C00002500
+      c: 14.2
+      h: 14.2
+      l: 14.2
+      n: 1
+      o: 14.2
+      t: 1675141200000
+      v: 1
+      vw: 14.2
+    - T: O:EVRI240119C00002500
+      c: 14.8
+      h: 14.8
+      l: 14.8
+      n: 1
+      o: 14.8
+      t: 1675054800000
+      v: 1
+      vw: 14.8
+    url: https://api.polygon.io/v2/aggs/ticker/O:EVRI240119C00002500/range/1/day/1401681600000/1702878297027?limit=235&sort=desc
+status: OK
+---
+auto_timestamp: 2023-12-17 21:44:58.347553
+auto_url: https://api.polygon.io/v1/indicators/sma/O:EVRI240119C00002500?timespan=day&adjusted=true&window=200&expand_underlying=true&order=desc&limit=10
+request_id: 8618cb9312207547d5fd5181d352f225
+results:
+  underlying:
+    aggregates:
+    - T: O:EVRI240119C00002500
+      c: 14.2
+      h: 14.2
+      l: 14.2
+      n: 1
+      o: 14.2
+      t: 1675141200000
+      v: 1
+      vw: 14.2
+    - T: O:EVRI240119C00002500
+      c: 14.8
+      h: 14.8
+      l: 14.8
+      n: 1
+      o: 14.8
+      t: 1675054800000
+      v: 1
+      vw: 14.8
+    url: https://api.polygon.io/v2/aggs/ticker/O:EVRI240119C00002500/range/1/day/1401681600000/1702878298286?limit=903&sort=desc
+status: OK
+---
+auto_timestamp: 2023-12-17 21:44:59.566510
+auto_url: https://api.polygon.io/v1/indicators/sma/O:EVRI240119C00002500?timespan=day&adjusted=true&window=200&expand_underlying=true&order=desc&limit=10
+request_id: c5e0286eee88d531c63e7a5986f603b8
+results:
+  underlying:
+    aggregates:
+    - T: O:EVRI240119C00002500
+      c: 14.2
+      h: 14.2
+      l: 14.2
+      n: 1
+      o: 14.2
+      t: 1675141200000
+      v: 1
+      vw: 14.2
+    - T: O:EVRI240119C00002500
+      c: 14.8
+      h: 14.8
+      l: 14.8
+      n: 1
+      o: 14.8
+      t: 1675054800000
+      v: 1
+      vw: 14.8
+    url: https://api.polygon.io/v2/aggs/ticker/O:EVRI240119C00002500/range/1/day/1401681600000/1702878299504?limit=903&sort=desc
+status: OK

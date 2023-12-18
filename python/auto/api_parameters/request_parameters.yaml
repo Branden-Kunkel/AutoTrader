@@ -5,13 +5,14 @@
 static_parameters: 
   polygon.io_url: "https://api.polygon.io/"
   api_key: "Bearer "
+  time_zone: "America/Los_Angeles"
 
 
 
 ################ ASSETS PARAMETERS #####################
 
 asset_parameters: 
-  options_ticker: "O:A231215C00080000"
+  options_ticker: "O:EVRI240119C00002500"
   ticker: "AAPL"
   date: "2023-12-02"
 
@@ -29,7 +30,7 @@ simple_moving_average:
     timestamp: null
     timespan: "day"
     adjusted: "true"
-    window: "50"
+    window: "200"
     series_type: null
     expand_underlying: "true"
     order: "desc"
@@ -107,4 +108,3 @@ options_contracts:
     limit: "10"
     sort: null  
   
-

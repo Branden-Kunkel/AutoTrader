@@ -18,3 +18,12 @@ class NoResponseAggregates(Exception):
 
     def __str__(self) -> str:
         return(repr(self.request_url))
+    
+class DataNotDict(Exception):
+    """handles getting a data type that is not 'dict' when 'dict' is expected"""
+
+    def __init__(self, data_type):
+        self.data_type = data_type
+
+    def __str__(self) -> str:
+        return(repr(self.data_type))

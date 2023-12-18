@@ -4,6 +4,8 @@ import yaml
 api_tools = data_access.GetApiData()
 export_api = data_access.ExportApiData()
 
+shared_test_url = ""
+
 
 def test_endpoints(file_paths, endpoint_yaml):
 
@@ -28,8 +30,19 @@ def test_endpoints(file_paths, endpoint_yaml):
         url = request["url"]
         
         request_url = api_tools.generate_request_url2(url, options_ticker, ticker, date, parameters)
+        global shared_test_url
+        shared_test_url = request_url
 
         data_object = api_tools.request_data(request_url, key)
 
         return data_object
     
+
+def test_data_export(data):
+    
+    with open("file_paths.yaml", mode='r') as paths_file:
+        paths_yaml = yaml.safe_load(paths_file)
+        write_dir = paths_yaml["api_parameters"]["api_export"]
+        export_data = export_api.sort_api_data(data, shared_test_url)
+        export_api.write_yaml(write_dir, export_data, "single_test.yaml")
+    return

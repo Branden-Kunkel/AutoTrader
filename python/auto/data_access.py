@@ -2,8 +2,9 @@
 import re
 import requests
 import json
+import yaml
 import exceptions.exceptions as AuthEx
-import pprint 
+from datetime import datetime
 
 
 class GetApiData():
@@ -70,59 +71,66 @@ class GetApiData():
 class ExportApiData():
     """class serves as an engine to export api data"""
 
-    def sort_aggregates(self, data_object):
+    def sort_api_data(self, data_object, request_url, timezone=str):
 
-        aggregates_dictionary_sorted =  {
-                                            "options_ticker": None,
-                                            "open_price" : None,
-                                            "close_price" : None,
-                                            "high_price" : None,
-                                            "low_price" : None,
-                                            "transactions" : None,
-                                            "otc_ticker" : None,
-                                            "unix_timestamp" : None,
-                                            "trading_volume" : None,
-                                            "weighted_avg_price" : None
-                                        }
+        if timezone == None:
+            timezone = "America/Los_Angeles"
+        else:
+            pass
+
+        timestamp = datetime.now()
+
+        mutable_dict = data_object
 
         try:
-            
             # polygon.io API gives a list with a (single) dictionary for the 'aggregates' response object rather than just a nested dictionary? BELOW
-            aggregates_dict = data_object["results"]["underlying"]["aggregates"][0]
-
-            for key in aggregates_dict:
-                if key == 'T':
-                    aggregates_dictionary_sorted["options_ticker"] = aggregates_dict[key]
-                elif key == 'o':
-                    aggregates_dictionary_sorted["open_price"] = aggregates_dict[key]
-                elif key == 'c':
-                    aggregates_dictionary_sorted["close_price"] = aggregates_dict[key]
-                elif key == 'h':
-                    aggregates_dictionary_sorted["high_price"] = aggregates_dict[key]
-                elif key == 'l':
-                    aggregates_dictionary_sorted["low_price"] = aggregates_dict[key]
-                elif key == 'n':
-                    aggregates_dictionary_sorted["transactions"] = aggregates_dict[key]
-                elif key == 't':
-                    aggregates_dictionary_sorted["unix_timestamp"] = aggregates_dict[key]
-                elif key == 'v':
-                    aggregates_dictionary_sorted["trading_volume"] = aggregates_dict[key]    
-                elif key == 'vw':
-                    aggregates_dictionary_sorted["weighted_avg_price"] = aggregates_dict[key]
+            for key in mutable_dict["results"]["underlying"]["aggregates"][0]:
+                if key == "T":
+                    key = "options_ticker"
+                elif key == "c":
+                    key = "close_price"
+                elif key == "h":
+                    key = "high_price"
+                elif key == "l":
+                    key = "low_price"
+                elif key == "n":
+                    key = "transactions"
+                elif key == "o":
+                    key = "open_price"
+                elif key == "t":
+                    key = "unix_timestamp"
+                elif key == "v":
+                    key = "trade_volume"
+                elif key == "vw":
+                    key = "vol_weight_avg"
                 else:
                     pass
-            print(aggregates_dict)
-            print("\n")
-            print(aggregates_dictionary_sorted)
+
+            mutable_dict["auto_timestamp"] = timestamp
+            mutable_dict["auto_url"] = request_url 
+
+            return mutable_dict
 
         except KeyError as key_error:
-            print("Error: Empty response object for {}".format(key_error.args))
+            print("Error: No aggregates present in response for : {}".format(key_error.args))
             return
-
         
 
+    def write_yaml(self, write_file_dir, data_object, filename):
+
+        write_directory = write_file_dir
+        full_path = write_directory + filename
+
+        try:
+            with open(full_path, mode='+a') as write_file:
+                yaml.safe_dump(data_object, write_file, explicit_start=True)
+
+        except Exception:
+            print("Author, check this exception")
+            return
         
 
-
-
+    def write_csv():
+        
+        pass
 
