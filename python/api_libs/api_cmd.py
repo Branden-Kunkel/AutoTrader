@@ -48,13 +48,20 @@ class TestCmdInterface(cmd.Cmd):
         return
     
     def do_options(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
+        test.test_data_export(test.test_endpoints(file_paths, "options_contracts"))
         return
     
+    def do_contract(self, arg):
+        test.test_data_export(test.test_endpoints(file_paths, "options_contract"))
+        return
+
     def do_tickers(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
+        test.test_data_export(test.test_endpoints(file_paths, "view_tickers"))
         return
     
+    def do_tickerv3(self, arg):
+        test.test_data_export(test.test_endpoints(file_paths, "ticker_v3"))
+
     def do_cwd(self, arg):
         print(os.getcwd())
 

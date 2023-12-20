@@ -1,10 +1,32 @@
 import data_access
 import yaml
+import json
+import os.path as path
 
 api_tools = data_access.GetApiData()
 export_api = data_access.ExportApiData()
+datakit = data_access.DataAccessToolkit()
 
 shared_test_url = ""
+
+def test_reload_export(file_dir, file_name):
+    full_path = file_dir + file_name
+    try:
+        with open(full_path, mode='r') as test_file:
+            if path.splitext(file_name)[1] == ".yaml":
+                yaml_obj = yaml.safe_load(test_file)
+                print(yaml_obj)
+                return
+            elif path.splitext(file_name)[1] == ".json":
+                json_obj = json.load(test_file)
+                print(json_obj)
+                return
+            else:
+                print("File type not in this test scope!\n")
+                return
+    except yaml.YAMLError as err:
+        pass 
+
 
 def test_endpoints(file_paths, endpoint_yaml):
 
@@ -24,11 +46,13 @@ def test_endpoints(file_paths, endpoint_yaml):
         options_ticker = assets["options_ticker"]
         ticker = assets["ticker"]
         date = assets["date"]
-        parameters = request["parameters"]
+        params = request["parameters"]
         key = static["api_key"]
         url = request["url"]
-        
-        request_url = api_tools.generate_request_url2(url, options_ticker, ticker, date, parameters)
+
+        datakit.validate_parameters(assets, static, request, options_ticker, ticker, date, params, key, url)
+                
+        request_url = api_tools.generate_request_url2(url, options_ticker, ticker, date, params)
         global shared_test_url
         shared_test_url = request_url
 
@@ -46,3 +70,4 @@ def test_data_export(data):
         export_api.write_yaml(write_dir, export_data, "single_test.yaml")
         export_api.write_json(write_dir, export_data, "single_test.json")
     return
+

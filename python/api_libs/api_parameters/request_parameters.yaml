@@ -4,9 +4,7 @@
 
 static_parameters: 
   polygon.io_url: "https://api.polygon.io/"
-  api_key: "Bearer "
-  time_zone: "America/Los_Angeles"
-
+  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
 
 
 ################ ASSETS PARAMETERS #####################
@@ -80,6 +78,8 @@ relative_strength_index:
 
 ticker_v3:
   url: "https://api.polygon.io/v3/reference/tickers/{ticker}?"
+  parameters:
+    date: null
 
 view_tickers: 
   url: "https://api.polygon.io/v3/reference/tickers?"
@@ -110,4 +110,9 @@ options_contracts:
     order: null
     limit: "10"
     sort: null  
+
+options_contract:
+  url: https://api.polygon.io/v3/reference/options/contracts/{optionsTicker}
+  parameters: 
+    "as_of": null
   

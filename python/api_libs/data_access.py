@@ -7,11 +7,26 @@ import exceptions.exceptions as AuthEx
 from datetime import datetime
 import os.path as path
 
+class DataAccessToolkit():
+    """toolkit for various checks and functions pertaining to the 'data_access.py' module"""
+
+    def validate_parameters(self, *params):
+        try:
+            for arg in params:
+                if arg == None:
+                    raise AuthEx.EmptyParameter(arg)
+                else:
+                    pass
+        except AuthEx.EmptyParameter as err:
+            print(err.error_msg())
+            return
+                
+
 
 class GetApiData():
     """class serves as an engine to access API data"""
 
-    def generate_request_url2(self, url: str, options_ticker: str, ticker: str, date: str, parameters: dict):
+    def generate_request_url2(self, url: str, options_ticker: str, ticker: str, date: str, request_parameters: dict):
         
         try:
 
@@ -25,13 +40,16 @@ class GetApiData():
 
             parameters_list = []
             endpoint_string = ""
+            try:
+                for key, value in request_parameters.items():
+                    if request_parameters[key] == None:
+                        pass  
+                    else:
+                        parameters_list.append(key + "=" + value)
+            except AttributeError as err:
+                print(AuthEx.ErrorMessage.not_dict_type)
+                return
 
-            for key, value in parameters.items():
-                if parameters[key] == None:
-                    pass
-                else:
-                    parameters_list.append(key + "=" + value)
-                
             endpoint_string = "&".join(parameters_list)
 
             request_url = url_buffer3 + endpoint_string
@@ -41,31 +59,45 @@ class GetApiData():
             return request_url
         
         except TypeError as err:
-            print("Error: Parameter Type: Make sure all parameters in \'request_parameters.yaml\' are of \'string\' type.\n")
-            return
+            if err.__cause__ == None:
+                pass
+            else:
+                print("check exception")
+                print(err)
+                print(err.__cause__)
+                return
+            
 
 
     def request_data(self, url: str, api_key: str):
 
-        headers = {"Authorization" : api_key}
-        
         try:
-        
+            
+            headers = {"Authorization" : api_key}
             response = requests.get(url, headers=headers)
 
             if response.status_code != 200:
-                raise AuthEx.RequestStatusCodeError(response.status_code)
+                raise AuthEx.RequestStatusCodeError(response.reason, response.status_code)
             else:
-                response_object = json.loads(response.content)
-            return response_object
+                if response.content == None:
+                    raise AuthEx.NoDataInResponse(url)
+                else:
+                    response_object = json.loads(response.content)
+                    return response_object
 
+        except requests.exceptions.MissingSchema as err:
+            print("Error: Missing Url! URL: {}.".format(url))
+            return
+        except requests.exceptions.InvalidSchema as err:
+            print("Error: Url not valid! URL: {}.".format(url))
+            return
         except AuthEx.RequestStatusCodeError as err:
-            print("Error: Response status code: {} > {}.\n".format(err, response.reason))
+            print(err.error_msg())
             return
-        except TypeError as err:
-            print("Error: Parameter Type: Make sure all parameters in \'request_parameters.yaml\' are of \'string\' type.\n")
+        except AuthEx.NoDataInResponse as err:
+            print(err.error_msg())
             return
-
+        
 
 
 class ExportApiData():
@@ -88,7 +120,10 @@ class ExportApiData():
 
         except TypeError as type_error:
             if type_error.__cause__ == None:
-                print("Error: No response to sort. Check data objects/api response.\n")
+                print("Error: No response to sort for <request: {}>. Check data objects/api response.\n".format(request_url))
+        except AttributeError as att_err:
+            if att_err.__cause__ == None:
+                print("Error: No response to sort for <request: {}>. Check data objects/api response.\n".format(request_url))
 
 
 
@@ -109,6 +144,7 @@ class ExportApiData():
         
 
     def write_json(self, write_file_dir: str, data_object: dict, filename: str):
+        
         write_directory = write_file_dir
         full_path = write_directory + filename
 
