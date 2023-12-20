@@ -27,3 +27,9 @@ class DataNotDict(Exception):
 
     def __str__(self) -> str:
         return(repr(self.data_type))
+    
+class DataExportFail(Exception):
+    """handles data export file not being written"""
+
+    def __str__(self) -> str:
+        return(repr("Error: Data from the api was not written to a file.\nStart troubleshooting by checking the file path in file_paths.yaml -> [api_files][api_export]"))

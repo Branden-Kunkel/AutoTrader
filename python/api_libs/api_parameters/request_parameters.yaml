@@ -12,7 +12,7 @@ static_parameters:
 ################ ASSETS PARAMETERS #####################
 
 asset_parameters: 
-  options_ticker: "O:EVRI240119C00002500"
+  options_ticker: "O:SPY241220P00720000"
   ticker: "AAPL"
   date: "2023-12-02"
 
@@ -68,7 +68,7 @@ relative_strength_index:
     timestamp: null
     timespan: "day"
     adjusted: "true"
-    window: "50"
+    window: "14"
     series_type: "close"
     expand_underlying: "true"
     order: "desc"
@@ -77,6 +77,9 @@ relative_strength_index:
 
 
 ################ REFERENCE DATA ENDPOINTS #####################  
+
+ticker_v3:
+  url: "https://api.polygon.io/v3/reference/tickers/{ticker}?"
 
 view_tickers: 
   url: "https://api.polygon.io/v3/reference/tickers?"

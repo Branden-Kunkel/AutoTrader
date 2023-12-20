@@ -5,12 +5,13 @@ import json
 import yaml
 import exceptions.exceptions as AuthEx
 from datetime import datetime
+import os.path as path
 
 
 class GetApiData():
     """class serves as an engine to access API data"""
 
-    def generate_request_url2(self, url, options_ticker, ticker, date, parameters=dict):
+    def generate_request_url2(self, url: str, options_ticker: str, ticker: str, date: str, parameters: dict):
         
         try:
 
@@ -20,7 +21,7 @@ class GetApiData():
 
             url_buffer = re.sub(date_regex, date, url)
             url_buffer2 = re.sub(options_ticker_regex, options_ticker, url_buffer)
-            url_buffer3 = re.sub(ticker, ticker, url_buffer2)
+            url_buffer3 = re.sub(ticker_regex, ticker, url_buffer2)
 
             parameters_list = []
             endpoint_string = ""
@@ -44,7 +45,7 @@ class GetApiData():
             return
 
 
-    def request_data(self, url, api_key):
+    def request_data(self, url: str, api_key: str):
 
         headers = {"Authorization" : api_key}
         
@@ -59,9 +60,8 @@ class GetApiData():
             return response_object
 
         except AuthEx.RequestStatusCodeError as err:
-            print("Error: Response status code: {} > {}".format(err, response.reason))
+            print("Error: Response status code: {} > {}.\n".format(err, response.reason))
             return
-
         except TypeError as err:
             print("Error: Parameter Type: Make sure all parameters in \'request_parameters.yaml\' are of \'string\' type.\n")
             return
@@ -71,69 +71,54 @@ class GetApiData():
 class ExportApiData():
     """class serves as an engine to export api data"""
 
-    def sort_api_data(self, data_object, request_url, timezone=str):
+    def sort_api_data(self, data_object: dict, request_url: str):
 
-        if timezone == None:
-            timezone = "America/Los_Angeles"
-        else:
-            pass
-
-        timestamp = datetime.now()
-
-        mutable_dict = data_object
+        timestamp_object = datetime.now()
+        timestamp = str(timestamp_object)
+        req_url = request_url
+        data = data_object
 
         try:
-            # polygon.io API gives a list with a (single) dictionary for the 'aggregates' response object rather than just a nested dictionary? BELOW
-            for key in mutable_dict["results"]["underlying"]["aggregates"][0]:
-                if key == "T":
-                    key = "options_ticker"
-                elif key == "c":
-                    key = "close_price"
-                elif key == "h":
-                    key = "high_price"
-                elif key == "l":
-                    key = "low_price"
-                elif key == "n":
-                    key = "transactions"
-                elif key == "o":
-                    key = "open_price"
-                elif key == "t":
-                    key = "unix_timestamp"
-                elif key == "v":
-                    key = "trade_volume"
-                elif key == "vw":
-                    key = "vol_weight_avg"
-                else:
-                    pass
 
-            mutable_dict["auto_timestamp"] = timestamp
-            mutable_dict["auto_url"] = request_url 
+            data.update({"auto": {}})
+            data["auto"]["auto_timestamp"] = timestamp 
+            data["auto"]["auto_url"] = req_url 
 
-            return mutable_dict
+            return data
 
-        except KeyError as key_error:
-            print("Error: No aggregates present in response for : {}".format(key_error.args))
-            return
         except TypeError as type_error:
             if type_error.__cause__ == None:
-                print("Error: No response to sort. Check data objects/api response.")
-        
+                print("Error: No response to sort. Check data objects/api response.\n")
 
-    def write_yaml(self, write_file_dir, data_object, filename):
+
+
+    def write_yaml(self, write_file_dir: str, data_object: dict, filename: str):
 
         write_directory = write_file_dir
         full_path = write_directory + filename
 
         try:
-            with open(full_path, mode='+a') as write_file:
+            with open(full_path, mode='a+') as write_file:
                 yaml.safe_dump(data_object, write_file, explicit_start=True)
+            return
 
-        except Exception:
-            print("Author, check this exception")
+        except FileNotFoundError as err:
+            print("Error: API export file directory path in file_paths.yaml -> [api_files][api_export] does not exist!")
             return
         
-
-    def write_csv():
         
-        pass
 
+    def write_json(self, write_file_dir: str, data_object: dict, filename: str):
+        write_directory = write_file_dir
+        full_path = write_directory + filename
+
+        try:
+            with open(full_path, mode='a+') as write_file:
+                json.dump(data_object, write_file, indent=4, sort_keys=True)
+            return
+
+        except FileNotFoundError as err:
+            print("Error: API export file directory path in file_paths.yaml -> [api_files][api_export] does not exist!")
+            return
+        
+    

@@ -40,23 +40,24 @@ class TestCmdInterface(cmd.Cmd):
         return
     
     def do_ema(self, arg):
-        display_test(test.test_endpoints(file_paths, "exponential_moving_average"))
+        test.test_data_export(test.test_endpoints(file_paths, "exponential_moving_average"))
         return
 
     def do_macd(self, arg):
-        display_test(test.test_endpoints(file_paths, "macd"))
+        test.test_data_export(test.test_endpoints(file_paths, "macd"))
         return
     
     def do_options(self, arg):
-        print(display_test(test.test_endpoints(file_paths,"options_contracts")))
+        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
         return
     
     def do_tickers(self, arg):
-        display_test(test.test_endpoints(file_paths, "view_tickers"))
+        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
         return
     
     def do_cwd(self, arg):
         print(os.getcwd())
+
     
 cli = TestCmdInterface()
 cli.cmdloop()

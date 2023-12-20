@@ -1,0 +1,496 @@
+---
+auto:
+  auto_timestamp: '2023-12-19 21:32:43.417537'
+  auto_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?timespan=day&adjusted=true&window=14&series_type=close&expand_underlying=true&order=desc&limit=10
+next_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?cursor=YWRqdXN0ZWQ9dHJ1ZSZhcD0lN0IlMjJ2JTIyJTNBMCUyQyUyMm8lMjIlM0EwJTJDJTIyYyUyMiUzQTI2Ni40MiUyQyUyMmglMjIlM0EwJTJDJTIybCUyMiUzQTAlMkMlMjJ0JTIyJTNBMTcwMTY2NjAwMDAwMCU3RCZhcz0mZXhwYW5kX3VuZGVybHlpbmc9dHJ1ZSZsaW1pdD0xMCZvcmRlcj1kZXNjJnNlcmllc190eXBlPWNsb3NlJnRpbWVzcGFuPWRheSZ0aW1lc3RhbXAubHQ9MTcwMTc1MjQwMDAwMCZ3aW5kb3c9MTQ
+request_id: 15f9add73cab74121b43349dc4e44bd0
+results:
+  underlying:
+    aggregates:
+    - T: O:SPY241220P00720000
+      c: 247.28
+      h: 247.28
+      l: 247.28
+      n: 2
+      o: 247.28
+      t: 1702875600000
+      v: 2
+      vw: 247.28
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702616400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702530000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702443600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702357200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702270800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702011600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701925200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701838800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701752400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701666000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701406800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701320400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701234000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701147600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 265.12
+      h: 265.12
+      l: 264.83
+      n: 5
+      o: 265.02
+      t: 1701061200000
+      v: 154
+      vw: 265.1013
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700802000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700802000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700629200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700542800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700456400000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700197200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700110800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700024400000
+      v: 2
+      vw: 279.52
+    url: https://api.polygon.io/v2/aggs/ticker/O:SPY241220P00720000/range/1/day/1401681600000/1703050363342?limit=75&sort=desc
+  values:
+  - timestamp: 1702875600000
+    value: 6.80952189803395
+  - timestamp: 1702616400000
+    value: 17.985077097138586
+  - timestamp: 1702530000000
+    value: 17.985077097138586
+  - timestamp: 1702443600000
+    value: 17.985077097138586
+  - timestamp: 1702357200000
+    value: 17.985077097138586
+  - timestamp: 1702270800000
+    value: 17.985077097138586
+  - timestamp: 1702011600000
+    value: 17.985077097138586
+  - timestamp: 1701925200000
+    value: 17.985077097138586
+  - timestamp: 1701838800000
+    value: 17.985077097138586
+  - timestamp: 1701752400000
+    value: 17.985077097138586
+status: OK
+---
+auto:
+  auto_timestamp: '2023-12-19 21:34:09.295208'
+  auto_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?timespan=day&adjusted=true&window=14&series_type=close&expand_underlying=true&order=desc&limit=10
+next_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?cursor=YWRqdXN0ZWQ9dHJ1ZSZhcD0lN0IlMjJ2JTIyJTNBMCUyQyUyMm8lMjIlM0EwJTJDJTIyYyUyMiUzQTI2Ni40MiUyQyUyMmglMjIlM0EwJTJDJTIybCUyMiUzQTAlMkMlMjJ0JTIyJTNBMTcwMTY2NjAwMDAwMCU3RCZhcz0mZXhwYW5kX3VuZGVybHlpbmc9dHJ1ZSZsaW1pdD0xMCZvcmRlcj1kZXNjJnNlcmllc190eXBlPWNsb3NlJnRpbWVzcGFuPWRheSZ0aW1lc3RhbXAubHQ9MTcwMTc1MjQwMDAwMCZ3aW5kb3c9MTQ
+request_id: cf20e41b486047cdbf5bb40d8dff15c9
+results:
+  underlying:
+    aggregates:
+    - T: O:SPY241220P00720000
+      c: 247.28
+      h: 247.28
+      l: 247.28
+      n: 2
+      o: 247.28
+      t: 1702875600000
+      v: 2
+      vw: 247.28
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702616400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702530000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702443600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702357200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702270800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702011600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701925200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701838800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701752400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701666000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701406800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701320400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701234000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701147600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 265.12
+      h: 265.12
+      l: 264.83
+      n: 5
+      o: 265.02
+      t: 1701061200000
+      v: 154
+      vw: 265.1013
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700802000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700629200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700542800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700456400000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700197200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700110800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700024400000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1699938000000
+      v: 2
+      vw: 279.52
+    url: https://api.polygon.io/v2/aggs/ticker/O:SPY241220P00720000/range/1/day/1401681600000/1703050449218?limit=75&sort=desc
+  values:
+  - timestamp: 1702875600000
+    value: 7.103628507606302
+  - timestamp: 1702616400000
+    value: 18.28514703683858
+  - timestamp: 1702530000000
+    value: 18.28514703683858
+  - timestamp: 1702443600000
+    value: 18.28514703683858
+  - timestamp: 1702357200000
+    value: 18.28514703683858
+  - timestamp: 1702270800000
+    value: 18.28514703683858
+  - timestamp: 1702011600000
+    value: 18.28514703683858
+  - timestamp: 1701925200000
+    value: 18.28514703683858
+  - timestamp: 1701838800000
+    value: 18.28514703683858
+  - timestamp: 1701752400000
+    value: 18.285147036838566
+status: OK

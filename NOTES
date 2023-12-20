@@ -1,4 +1,7 @@
 TODO:
+- use os.path for path types?
 
-use os.path in python modules to set paths for configuration files for both rust and python
-create and initialize rust data types derived from api data supplied by python
+
+Notes:
+- program timestamp is naive datetime. it uses local system time, not accounting for timezones (this may change)
+

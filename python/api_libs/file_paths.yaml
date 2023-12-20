@@ -1,0 +1,7 @@
+---
+
+api_files: 
+  request_parameters: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/api_parameters/request_parameters.yaml"
+  api_export: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/api_parameters/"
+
+program_files: 

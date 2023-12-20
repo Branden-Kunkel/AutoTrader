@@ -6,13 +6,12 @@ export_api = data_access.ExportApiData()
 
 shared_test_url = ""
 
-
 def test_endpoints(file_paths, endpoint_yaml):
 
     with open(file_paths, mode='r') as path_file:
 
         paths = yaml.safe_load(path_file)
-        parameters_file = paths["api_parameters"]["request_parameters"]
+        parameters_file = paths["api_files"]["request_parameters"]
 
     with open(parameters_file, mode='r') as parameters_file:
 
@@ -42,7 +41,8 @@ def test_data_export(data):
     
     with open("file_paths.yaml", mode='r') as paths_file:
         paths_yaml = yaml.safe_load(paths_file)
-        write_dir = paths_yaml["api_parameters"]["api_export"]
+        write_dir = paths_yaml["api_files"]["api_export"]
         export_data = export_api.sort_api_data(data, shared_test_url)
         export_api.write_yaml(write_dir, export_data, "single_test.yaml")
+        export_api.write_json(write_dir, export_data, "single_test.json")
     return
