@@ -4,7 +4,7 @@
 
 static_parameters: 
   polygon.io_url: "https://api.polygon.io/"
-  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
+  api_key: "Bearer "
 
 
 ################ ASSETS PARAMETERS #####################
