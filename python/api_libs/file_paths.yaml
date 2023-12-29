@@ -1,7 +1,8 @@
 ---
 
 api_files: 
-  request_parameters: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/api_parameters/request_parameters.yaml"
-  api_export: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/api_parameters/"
+  request_parameters: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/program_files/request_parameters.yaml"
+  api_export: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/polygon_data/"
 
-program_files: 
+program_files:
+  settings: "/home/brandenk/Documents/programming/large/auto_trader/python/api_libs/program_files/settings.yaml"

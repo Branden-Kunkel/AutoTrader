@@ -1,15 +1,8 @@
-import function_tests as test
-import pprint
 import cmd
 import os
-import yaml
+import function_tests as test
 
 file_paths = "file_paths.yaml"
-
-
-def display_test(object):
-    pprint.pprint(object)
-    return
    
 
 class TestCmdInterface(cmd.Cmd):
@@ -32,35 +25,35 @@ class TestCmdInterface(cmd.Cmd):
 
 
     def do_rsi(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "relative_strength_index"))
+        test.test("relative_strength_index")
         return
     
     def do_sma(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "simple_moving_average"))
+        test.test("simple_moving_average")
         return
     
     def do_ema(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "exponential_moving_average"))
+        test.test("exponential_moving_average")
         return
 
     def do_macd(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "macd"))
+        test.test("macd")
         return
     
     def do_options(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "options_contracts"))
+        test.test("options_contracts")
         return
     
     def do_contract(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "options_contract"))
+        test.test("options_contract")
         return
 
     def do_tickers(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "view_tickers"))
+        test.test("view_tickers")
         return
     
     def do_tickerv3(self, arg):
-        test.test_data_export(test.test_endpoints(file_paths, "ticker_v3"))
+        test.test()
 
     def do_cwd(self, arg):
         print(os.getcwd())

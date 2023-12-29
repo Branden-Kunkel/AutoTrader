@@ -1,12 +1,5 @@
 ---
 
-################ STATIC/CONSTANT PARAMETERS #####################
-
-static_parameters: 
-  polygon.io_url: "https://api.polygon.io/"
-  api_key: "Bearer "
-
-
 ################ ASSETS PARAMETERS #####################
 
 asset_parameters: 

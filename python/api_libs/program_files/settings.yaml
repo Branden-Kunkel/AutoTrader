@@ -1,0 +1,10 @@
+---
+
+static: 
+  api_key: "Bearer "
+
+preferences: 
+  verbose?: true
+  verbosity: 1 #1-3
+  
+
