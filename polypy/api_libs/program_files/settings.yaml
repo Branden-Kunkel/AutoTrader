@@ -1,0 +1,10 @@
+---
+
+static: 
+  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
+  request_rate: 15 #seconds
+
+preferences: 
+  verbose?: true
+  
+

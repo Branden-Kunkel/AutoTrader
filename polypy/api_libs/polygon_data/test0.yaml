@@ -1,0 +1,474 @@
+---
+auto:
+  auto_timestamp: '2024-01-01 12:36:03.157228'
+  auto_url: https://api.polygon.io/v3/reference/tickers?active=true&order=asc&limit=10&sort=ticker
+count: 10
+next_url: https://api.polygon.io/v3/reference/tickers?cursor=YWN0aXZlPXRydWUmYXA9QUFDQVklN0NiYTk2ZmQwNjA5ZDQ5Mjc0MGU2NmY3ZDFjMzQ3MTA5MjQ4MzAxNzRkNGRmOGY3ZTQ2YjM1MmNiODlmNjcxNTE2JmFzPSZkYXRlPTIwMjQtMDEtMDEmbGltaXQ9MTAmb3JkZXI9YXNjJnNvcnQ9dGlja2Vy
+request_id: f7475e1be171fe8d83b82112eeefc950
+results:
+- active: true
+  cik: 0001090872
+  composite_figi: BBG000C2V3D6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Agilent Technologies Inc.
+  primary_exchange: XNYS
+  share_class_figi: BBG001SCTQY4
+  ticker: A
+  type: CS
+- active: true
+  cik: 0001675149
+  composite_figi: BBG00B3T3HD3
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Alcoa Corporation
+  primary_exchange: XNYS
+  share_class_figi: BBG00B3T3HF1
+  ticker: AA
+  type: CS
+- active: true
+  cik: 0001776878
+  composite_figi: BBG01B0JRCS6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: AXS First Priority CLO Bond ETF
+  primary_exchange: ARCX
+  share_class_figi: BBG01B0JRCT5
+  ticker: AAA
+  type: ETF
+- active: true
+  currency_name: USD
+  last_updated_utc: '2022-08-26T05:00:07.114Z'
+  locale: us
+  market: otc
+  name: ALTERNATIVE INVSTMENT TR
+  ticker: AAAIF
+  type: FUND
+- active: true
+  composite_figi: BBG002628DF1
+  currency_name: USD
+  last_updated_utc: '2023-05-04T05:00:29.876Z'
+  locale: us
+  market: otc
+  name: AAREAL BANK AG UNSP/ADR
+  share_class_figi: BBG002628F57
+  ticker: AAALY
+  type: ADRC
+- active: true
+  cik: 0001708646
+  composite_figi: BBG00LPXX872
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Goldman Sachs Physical Gold ETF Shares
+  primary_exchange: BATS
+  share_class_figi: BBG00LPXX8Z1
+  ticker: AAAU
+  type: ETF
+- active: true
+  composite_figi: BBG000CWNRN5
+  currency_name: USD
+  last_updated_utc: '2023-04-17T05:00:24.252Z'
+  locale: us
+  market: otc
+  name: ASIA BROADBAND INC
+  share_class_figi: BBG001SGRBK5
+  ticker: AABB
+  type: CS
+- active: true
+  composite_figi: BBG000BXKHJ4
+  currency_name: USD
+  last_updated_utc: '2023-05-10T05:00:36.305Z'
+  locale: us
+  market: otc
+  name: ABERDEEN INTL INC
+  share_class_figi: BBG001S6XZ90
+  ticker: AABVF
+  type: OS
+- active: true
+  currency_name: USD
+  last_updated_utc: '2022-06-24T14:14:05.429Z'
+  locale: us
+  market: otc
+  name: AAC TECHS HLDGS INC ORD
+  ticker: AACAF
+  type: OS
+- active: true
+  composite_figi: BBG000VNTB62
+  currency_name: USD
+  last_updated_utc: '2023-04-14T05:00:16.614Z'
+  locale: us
+  market: otc
+  name: AAC TECHS HLDGS UNSP/ADR
+  share_class_figi: BBG001T3PT80
+  ticker: AACAY
+  type: ADRC
+status: OK
+---
+auto:
+  auto_timestamp: '2024-01-01 14:14:43.709909'
+  auto_url: https://api.polygon.io/v3/reference/tickers?active=true&order=asc&limit=10&sort=ticker
+count: 10
+next_url: https://api.polygon.io/v3/reference/tickers?cursor=YWN0aXZlPXRydWUmYXA9QUFDQVklN0NiYTk2ZmQwNjA5ZDQ5Mjc0MGU2NmY3ZDFjMzQ3MTA5MjQ4MzAxNzRkNGRmOGY3ZTQ2YjM1MmNiODlmNjcxNTE2JmFzPSZkYXRlPTIwMjQtMDEtMDEmbGltaXQ9MTAmb3JkZXI9YXNjJnNvcnQ9dGlja2Vy
+request_id: 90efab3598b4077d19751e8bfb0b5b17
+results:
+- active: true
+  cik: 0001090872
+  composite_figi: BBG000C2V3D6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Agilent Technologies Inc.
+  primary_exchange: XNYS
+  share_class_figi: BBG001SCTQY4
+  ticker: A
+  type: CS
+- active: true
+  cik: 0001675149
+  composite_figi: BBG00B3T3HD3
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Alcoa Corporation
+  primary_exchange: XNYS
+  share_class_figi: BBG00B3T3HF1
+  ticker: AA
+  type: CS
+- active: true
+  cik: 0001776878
+  composite_figi: BBG01B0JRCS6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: AXS First Priority CLO Bond ETF
+  primary_exchange: ARCX
+  share_class_figi: BBG01B0JRCT5
+  ticker: AAA
+  type: ETF
+- active: true
+  currency_name: USD
+  last_updated_utc: '2022-08-26T05:00:07.114Z'
+  locale: us
+  market: otc
+  name: ALTERNATIVE INVSTMENT TR
+  ticker: AAAIF
+  type: FUND
+- active: true
+  composite_figi: BBG002628DF1
+  currency_name: USD
+  last_updated_utc: '2023-05-04T05:00:29.876Z'
+  locale: us
+  market: otc
+  name: AAREAL BANK AG UNSP/ADR
+  share_class_figi: BBG002628F57
+  ticker: AAALY
+  type: ADRC
+- active: true
+  cik: 0001708646
+  composite_figi: BBG00LPXX872
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Goldman Sachs Physical Gold ETF Shares
+  primary_exchange: BATS
+  share_class_figi: BBG00LPXX8Z1
+  ticker: AAAU
+  type: ETF
+- active: true
+  composite_figi: BBG000CWNRN5
+  currency_name: USD
+  last_updated_utc: '2023-04-17T05:00:24.252Z'
+  locale: us
+  market: otc
+  name: ASIA BROADBAND INC
+  share_class_figi: BBG001SGRBK5
+  ticker: AABB
+  type: CS
+- active: true
+  composite_figi: BBG000BXKHJ4
+  currency_name: USD
+  last_updated_utc: '2023-05-10T05:00:36.305Z'
+  locale: us
+  market: otc
+  name: ABERDEEN INTL INC
+  share_class_figi: BBG001S6XZ90
+  ticker: AABVF
+  type: OS
+- active: true
+  currency_name: USD
+  last_updated_utc: '2022-06-24T14:14:05.429Z'
+  locale: us
+  market: otc
+  name: AAC TECHS HLDGS INC ORD
+  ticker: AACAF
+  type: OS
+- active: true
+  composite_figi: BBG000VNTB62
+  currency_name: USD
+  last_updated_utc: '2023-04-14T05:00:16.614Z'
+  locale: us
+  market: otc
+  name: AAC TECHS HLDGS UNSP/ADR
+  share_class_figi: BBG001T3PT80
+  ticker: AACAY
+  type: ADRC
+status: OK
+---
+auto:
+  auto_timestamp: '2024-01-01 14:20:43.355227'
+  auto_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?timespan=day&adjusted=true&window=14&series_type=close&expand_underlying=true&order=desc&limit=10
+next_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?cursor=YWRqdXN0ZWQ9dHJ1ZSZhcD0lN0IlMjJ2JTIyJTNBMCUyQyUyMm8lMjIlM0EwJTJDJTIyYyUyMiUzQTI2Ni40MiUyQyUyMmglMjIlM0EwJTJDJTIybCUyMiUzQTAlMkMlMjJ0JTIyJTNBMTcwMjM1NzIwMDAwMCU3RCZhcz0mZXhwYW5kX3VuZGVybHlpbmc9dHJ1ZSZsaW1pdD0xMCZvcmRlcj1kZXNjJnNlcmllc190eXBlPWNsb3NlJnRpbWVzcGFuPWRheSZ0aW1lc3RhbXAubHQ9MTcwMjQ0MzYwMDAwMCZ3aW5kb3c9MTQ
+request_id: 510bcb3276722f18bca25deeb64ba051
+results:
+  underlying:
+    aggregates:
+    - T: O:SPY241220P00720000
+      c: 243.77
+      h: 243.77
+      l: 243.77
+      n: 1
+      o: 243.77
+      t: 1703653200000
+      v: 1
+      vw: 243.77
+    - T: O:SPY241220P00720000
+      c: 245.1
+      h: 245.1
+      l: 245.1
+      n: 1
+      o: 245.1
+      t: 1703566800000
+      v: 1
+      vw: 245.1
+    - T: O:SPY241220P00720000
+      c: 245.1
+      h: 245.1
+      l: 245.1
+      n: 1
+      o: 245.1
+      t: 1703221200000
+      v: 1
+      vw: 245.1
+    - T: O:SPY241220P00720000
+      c: 252.04
+      h: 252.04
+      l: 252.04
+      n: 2
+      o: 252.04
+      t: 1703134800000
+      v: 2
+      vw: 252.04
+    - T: O:SPY241220P00720000
+      c: 252.04
+      h: 252.04
+      l: 252.04
+      n: 2
+      o: 252.04
+      t: 1703048400000
+      v: 2
+      vw: 252.04
+    - T: O:SPY241220P00720000
+      c: 247.28
+      h: 247.28
+      l: 247.28
+      n: 2
+      o: 247.28
+      t: 1702962000000
+      v: 2
+      vw: 247.28
+    - T: O:SPY241220P00720000
+      c: 247.28
+      h: 247.28
+      l: 247.28
+      n: 2
+      o: 247.28
+      t: 1702875600000
+      v: 2
+      vw: 247.28
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702616400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702530000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702443600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702357200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702270800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1702011600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701925200000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701838800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701752400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701666000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701406800000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701320400000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701234000000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701147600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 265.12
+      h: 265.12
+      l: 264.83
+      n: 5
+      o: 265.02
+      t: 1701061200000
+      v: 154
+      vw: 265.1013
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700802000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700629200000
+      v: 2
+      vw: 279.52
+    url: https://api.polygon.io/v2/aggs/ticker/O:SPY241220P00720000/range/1/day/1401681600000/1704147643085?limit=75&sort=desc
+  values:
+  - timestamp: 1703653200000
+    value: 16.056321864759425
+  - timestamp: 1703566800000
+    value: 16.7780756464215
+  - timestamp: 1703221200000
+    value: 16.7780756464215
+  - timestamp: 1703134800000
+    value: 21.03165960579915
+  - timestamp: 1703048400000
+    value: 21.03165960579915
+  - timestamp: 1702962000000
+    value: 7.10362850647094
+  - timestamp: 1702875600000
+    value: 7.10362850647094
+  - timestamp: 1702616400000
+    value: 18.285147036956673
+  - timestamp: 1702530000000
+    value: 18.285147036956673
+  - timestamp: 1702443600000
+    value: 18.285147036956673
+status: OK

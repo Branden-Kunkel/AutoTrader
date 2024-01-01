@@ -1,9 +1,0 @@
-TODO:
-- use os.path for path types?
-- continue refining error handling for api_libs library to make it more concise and readable
-- update cmd for api_libs to allow for full usage of the singular library as a standalone with options
-
-
-Notes:
-- program timestamp is naive datetime. it uses local system time, not accounting for timezones (this may change)
-

@@ -1,0 +1,488 @@
+---
+auto:
+  auto_timestamp: '2024-01-01 12:36:08.549479'
+  auto_url: 'page_1_from: https://api.polygon.io/v3/reference/tickers?active=true&order=asc&limit=10&sort=ticker'
+count: 10
+next_url: https://api.polygon.io/v3/reference/tickers?cursor=YWN0aXZlPXRydWUmYXA9QUFESSU3Qzg3YWYwY2Y2MTgyYmRhZTliNmMyOGY4MjIwYTE3MzBhNDZlZGRlZjk0Y2RjMjAzZjFkMGY1NDgwMzMzYWI1MGUmYXM9JmRhdGU9MjAyNC0wMS0wMSZsaW1pdD0xMCZvcmRlcj1hc2Mmc29ydD10aWNrZXI
+request_id: 034e510588e980349e5ae59bfbee625c
+results:
+- active: true
+  cik: 0001420529
+  composite_figi: BBG000V2S3P6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: ATA Creativity Global American Depositary Shares
+  primary_exchange: XNAS
+  share_class_figi: BBG001T125S9
+  ticker: AACG
+  type: ADRC
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011XR7306
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Common Stock
+  primary_exchange: XNAS
+  share_class_figi: BBG011XR7315
+  ticker: AACI
+  type: CS
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011PFP1D1
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Unit
+  primary_exchange: XNAS
+  share_class_figi: BBG011PFP285
+  ticker: AACIU
+  type: UNIT
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011XRPQV1
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Warrant
+  primary_exchange: XNAS
+  ticker: AACIW
+  type: WARRANT
+- active: true
+  composite_figi: BBG000JVQ2Q9
+  currency_name: USD
+  last_updated_utc: '2023-10-11T21:27:34.659Z'
+  locale: us
+  market: otc
+  name: AMER COMMERCE SOLTNS INC
+  share_class_figi: BBG001SBV1Z7
+  ticker: AACS
+  type: CS
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II
+  primary_exchange: XNYS
+  ticker: AACT
+  type: CS
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II Units, each consisting of one Class A ordinary
+    share and one-half of one redeemable warrant
+  primary_exchange: XNYS
+  ticker: AACT.U
+  type: UNIT
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II Redeemable Warrants, each whole warrant exercisable
+    for one Class A ordinary share at an exercise price of $11.50
+  primary_exchange: XNYS
+  ticker: AACT.WS
+  type: WARRANT
+- active: true
+  composite_figi: BBG005BTJ9X6
+  currency_name: USD
+  last_updated_utc: '2022-08-12T05:00:19.436Z'
+  locale: us
+  market: otc
+  name: AURORA SOLAR TECHNOLOGIES
+  share_class_figi: BBG001STZM33
+  ticker: AACTF
+  type: OS
+- active: true
+  cik: '0001422142'
+  composite_figi: BBG002WN7DT2
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Aadi Bioscience, Inc. Common Stock
+  primary_exchange: XNAS
+  share_class_figi: BBG002WN7DV9
+  ticker: AADI
+  type: CS
+status: OK
+---
+auto:
+  auto_timestamp: '2024-01-01 14:14:59.100124'
+  auto_url: 'page_1_from: https://api.polygon.io/v3/reference/tickers?active=true&order=asc&limit=10&sort=ticker'
+count: 10
+next_url: https://api.polygon.io/v3/reference/tickers?cursor=YWN0aXZlPXRydWUmYXA9QUFESSU3Qzg3YWYwY2Y2MTgyYmRhZTliNmMyOGY4MjIwYTE3MzBhNDZlZGRlZjk0Y2RjMjAzZjFkMGY1NDgwMzMzYWI1MGUmYXM9JmRhdGU9MjAyNC0wMS0wMSZsaW1pdD0xMCZvcmRlcj1hc2Mmc29ydD10aWNrZXI
+request_id: 5c2f741c2057c8cd74e3a1f75b11287d
+results:
+- active: true
+  cik: 0001420529
+  composite_figi: BBG000V2S3P6
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: ATA Creativity Global American Depositary Shares
+  primary_exchange: XNAS
+  share_class_figi: BBG001T125S9
+  ticker: AACG
+  type: ADRC
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011XR7306
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Common Stock
+  primary_exchange: XNAS
+  share_class_figi: BBG011XR7315
+  ticker: AACI
+  type: CS
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011PFP1D1
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Unit
+  primary_exchange: XNAS
+  share_class_figi: BBG011PFP285
+  ticker: AACIU
+  type: UNIT
+- active: true
+  cik: 0001844817
+  composite_figi: BBG011XRPQV1
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Armada Acquisition Corp. I Warrant
+  primary_exchange: XNAS
+  ticker: AACIW
+  type: WARRANT
+- active: true
+  composite_figi: BBG000JVQ2Q9
+  currency_name: USD
+  last_updated_utc: '2023-10-11T21:27:34.659Z'
+  locale: us
+  market: otc
+  name: AMER COMMERCE SOLTNS INC
+  share_class_figi: BBG001SBV1Z7
+  ticker: AACS
+  type: CS
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II
+  primary_exchange: XNYS
+  ticker: AACT
+  type: CS
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II Units, each consisting of one Class A ordinary
+    share and one-half of one redeemable warrant
+  primary_exchange: XNYS
+  ticker: AACT.U
+  type: UNIT
+- active: true
+  cik: 0001853138
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Ares Acquisition Corporation II Redeemable Warrants, each whole warrant exercisable
+    for one Class A ordinary share at an exercise price of $11.50
+  primary_exchange: XNYS
+  ticker: AACT.WS
+  type: WARRANT
+- active: true
+  composite_figi: BBG005BTJ9X6
+  currency_name: USD
+  last_updated_utc: '2022-08-12T05:00:19.436Z'
+  locale: us
+  market: otc
+  name: AURORA SOLAR TECHNOLOGIES
+  share_class_figi: BBG001STZM33
+  ticker: AACTF
+  type: OS
+- active: true
+  cik: '0001422142'
+  composite_figi: BBG002WN7DT2
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Aadi Bioscience, Inc. Common Stock
+  primary_exchange: XNAS
+  share_class_figi: BBG002WN7DV9
+  ticker: AADI
+  type: CS
+status: OK
+---
+auto:
+  auto_timestamp: '2024-01-01 14:20:49.027146'
+  auto_url: 'page_1_from: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?timespan=day&adjusted=true&window=14&series_type=close&expand_underlying=true&order=desc&limit=10'
+next_url: https://api.polygon.io/v1/indicators/rsi/O:SPY241220P00720000?cursor=YWRqdXN0ZWQ9dHJ1ZSZhcD0lN0IlMjJ2JTIyJTNBMCUyQyUyMm8lMjIlM0EwJTJDJTIyYyUyMiUzQTI3OS41MiUyQyUyMmglMjIlM0EwJTJDJTIybCUyMiUzQTAlMkMlMjJ0JTIyJTNBMTY5OTg1MTYwMDAwMCU3RCZhcz0mZXhwYW5kX3VuZGVybHlpbmc9dHJ1ZSZsaW1pdD0xMCZvcmRlcj1kZXNjJnNlcmllc190eXBlPWNsb3NlJnRpbWVzcGFuPWRheSZ0aW1lc3RhbXAubHQ9MTY5OTkzODAwMDAwMCZ3aW5kb3c9MTQ
+request_id: 1c5126cd4e741cd5c5ef1cfac1d61f1a
+results:
+  underlying:
+    aggregates:
+    - T: O:SPY241220P00720000
+      c: 266.42
+      h: 266.42
+      l: 266.42
+      n: 2
+      o: 266.42
+      t: 1701147600000
+      v: 2
+      vw: 266.42
+    - T: O:SPY241220P00720000
+      c: 265.12
+      h: 265.12
+      l: 264.83
+      n: 5
+      o: 265.02
+      t: 1701061200000
+      v: 154
+      vw: 265.1013
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700802000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700629200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700542800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700456400000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700197200000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700110800000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1700024400000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1699938000000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 279.52
+      h: 279.52
+      l: 279.52
+      n: 2
+      o: 279.52
+      t: 1699851600000
+      v: 2
+      vw: 279.52
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1699592400000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1699506000000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1699419600000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1699333200000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1699246800000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698984000000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698897600000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698811200000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698724800000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698638400000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698379200000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 307.07
+      h: 307.07
+      l: 307.07
+      n: 1
+      o: 307.07
+      t: 1698292800000
+      v: 1
+      vw: 307.07
+    - T: O:SPY241220P00720000
+      c: 301.37
+      h: 301.37
+      l: 301.33
+      n: 2
+      o: 301.33
+      t: 1698206400000
+      v: 2
+      vw: 301.35
+    url: https://api.polygon.io/v2/aggs/ticker/O:SPY241220P00720000/range/1/day/1401681600000/1702443600000?limit=75&sort=desc
+  values:
+  - timestamp: 1701147600000
+    value: 18.285147036956673
+  - timestamp: 1701061200000
+    value: 15.067716350095694
+  - timestamp: 1700802000000
+    value: 25.32340204494581
+  - timestamp: 1700629200000
+    value: 25.32340204494581
+  - timestamp: 1700542800000
+    value: 25.32340204494581
+  - timestamp: 1700456400000
+    value: 25.32340204494581
+  - timestamp: 1700197200000
+    value: 25.32340204494581
+  - timestamp: 1700110800000
+    value: 25.32340204494581
+  - timestamp: 1700024400000
+    value: 25.32340204494581
+  - timestamp: 1699938000000
+    value: 25.32340204494581
+status: OK

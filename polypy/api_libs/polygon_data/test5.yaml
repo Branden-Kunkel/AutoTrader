@@ -1,0 +1,111 @@
+---
+auto:
+  auto_timestamp: '2024-01-01 14:16:01.179451'
+  auto_url: 'page_5_from: https://api.polygon.io/v3/reference/tickers?active=true&order=asc&limit=10&sort=ticker'
+count: 10
+next_url: https://api.polygon.io/v3/reference/tickers?cursor=YWN0aXZlPXRydWUmYXA9QUFUJTdDMzgyNzAzOTM5ZmMzNWM2MmYzNTI3OGI5YTdhODE5MzM1YTE0ZDAwODJiMjY0YmRiMWJhYzc0ODE4ZGNkZjNlYSZhcz0mZGF0ZT0yMDI0LTAxLTAxJmxpbWl0PTEwJm9yZGVyPWFzYyZzb3J0PXRpY2tlcg
+request_id: 5d069caa3b62bd165a7cae9e63e8cb2f
+results:
+- active: true
+  cik: 0000320193
+  composite_figi: BBG000B9XRY4
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Apple Inc.
+  primary_exchange: XNAS
+  share_class_figi: BBG001S5N8V8
+  ticker: AAPL
+  type: CS
+- active: true
+  composite_figi: BBG000R7ZH35
+  currency_name: USD
+  last_updated_utc: '2023-06-21T05:00:35.127Z'
+  locale: us
+  market: otc
+  name: ALL AMERICAN PET CO INC
+  share_class_figi: BBG001SM7HC0
+  ticker: AAPT
+  type: CS
+- active: true
+  composite_figi: BBG0193YBZ92
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Direxion Daily AAPL Bull 1.5X Shares
+  primary_exchange: XNAS
+  share_class_figi: BBG0193YC043
+  ticker: AAPU
+  type: ETS
+- active: true
+  composite_figi: BBG01JXKG7J3
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: Kurv Yield Premium Strategy Apple (AAPL) ETF
+  primary_exchange: BATS
+  share_class_figi: BBG01JXKG8C8
+  ticker: AAPY
+  type: ETS
+- active: true
+  composite_figi: BBG00CTT6WQ3
+  currency_name: USD
+  last_updated_utc: '2023-10-11T21:28:39.259Z'
+  locale: us
+  market: otc
+  name: ANTIAGING QNTUM LGN A
+  share_class_figi: BBG00CTT6WR2
+  ticker: AAQL
+  type: CS
+- active: true
+  composite_figi: BBG0175XTW30
+  currency_name: USD
+  last_updated_utc: '2023-09-06T05:00:17.289Z'
+  locale: us
+  market: otc
+  name: AIRTEL AFRICA PLC ADR
+  share_class_figi: BBG0175XTWY6
+  ticker: AARTY
+  type: ADRC
+- active: true
+  currency_name: USD
+  last_updated_utc: '2023-12-07T07:42:11.782Z'
+  locale: us
+  market: otc
+  name: ABERDEEN ASIAN SMALLR COS
+  ticker: AASCF
+  type: OS
+- active: true
+  composite_figi: BBG000K2W621
+  currency_name: USD
+  last_updated_utc: '2023-05-04T05:00:32.276Z'
+  locale: us
+  market: otc
+  name: GLOBAL ACQUISITIONS CORP
+  share_class_figi: BBG001S7JJF3
+  ticker: AASP
+  type: CS
+- active: true
+  currency_name: USD
+  last_updated_utc: '2023-11-20T19:53:20.382Z'
+  locale: us
+  market: otc
+  name: ATLANTIC SAPPHIRE AS
+  ticker: AASZF
+  type: OS
+- active: true
+  cik: '0001500217'
+  composite_figi: BBG00161BCR0
+  currency_name: usd
+  last_updated_utc: '2023-12-29T00:00:00Z'
+  locale: us
+  market: stocks
+  name: AMERICAN ASSETS TRUST, INC.
+  primary_exchange: XNYS
+  share_class_figi: BBG001TCBJS5
+  ticker: AAT
+  type: CS
+status: OK
