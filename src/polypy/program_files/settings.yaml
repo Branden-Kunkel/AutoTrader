@@ -1,7 +1,7 @@
 ---
 
 static: 
-  api_key: "Bearer 0akcU608xTYKA5yL9qs2pyUaZSZ5mxip"
+  api_key: "Bearer "
   request_rate: 15 #seconds
 
 preferences: 

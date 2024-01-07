@@ -366,7 +366,7 @@ class ExportApiData():
                 file_ext = ".json"
                 filename = split_ext[0] + file_ext
             elif file_ext == None:
-                filename = filename + ".yaml"
+                filename = filename + ".json"
             else:
                 pass
 
